@@ -1,4 +1,4 @@
-public struct SwiftPrefixSum {
+public struct PrefixSumArray {
     private var table: [Int] = []
 
     public init(numbers: [Int]) {
