@@ -3,9 +3,8 @@ import XCTest
 
 final class SwiftPrefixSumTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SwiftPrefixSum().text, "Hello, World!")
+        let numbers = [1, 2, 3, 4, 5, 6]
+        let array = PrefixSumArray(numbers: numbers)
+        XCTAssertEqual(array.query(start: 1, end: 3)!, 9)
     }
 }
