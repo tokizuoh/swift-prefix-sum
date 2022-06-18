@@ -10,4 +10,14 @@ public struct SwiftPrefixSum {
             table[i + 1] = numbers[i] + table[i]
         }
     }
+
+    public func query(start: Int, end: Int) -> Int? {
+        guard table.indices.contains(start),
+              table.indices.contains(end + 1),
+              start <= end else {
+            return nil
+        }
+
+        return table[end + 1] - table[start]
+    }
 }
