@@ -1,7 +1,7 @@
 import XCTest
 @testable import SwiftPrefixSum
 
-final class SwiftPrefixSumTests: XCTestCase {
+final class PrefixSumArrayTests: XCTestCase {
     func testExample() throws {
         let numbers = [1, 2, 3, 4, 5, 6]
         let array = PrefixSumArray(numbers: numbers)
